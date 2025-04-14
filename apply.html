@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Job Application Form">
+  <meta name="keywords" content="Job Application, Form, HTML">
+  <meta name="author" content="Harry Webb">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Job Application – Overachieving Underachievers</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/TOULogo2.png" alt="Logo">
+    <nav>
+        <a class="NonActive">OVERACHIEVING UNDERACHIEVERS</a>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="about.html">About</a>
+    </nav>
+    <nav class="NavRight">
+        <a class="NonActive">Carrers:</a>
+        <a href="jobs.html">Job Descriptions</a>
+        <a class="Current">Job Application</a>
+    </nav>
+  </header>
+
+  <!-- Main Application Form -->
+  <article class="NoImageArticle">
+    <section>
+      <div class="LeftAlignDiv" style="width: 100%;">
+        <h1>Job Application Form</h1>
+        <p class="Tagline">Apply to join the Overachieving Underachievers</p>
+        <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
+          <!-- Reference -->
+          <label class="apply-label" for="reference_number">Job Reference Number:</label><br>
+          <select class="apply-input" name="reference_number" id="reference_number" required>
+            <option value="">Please Select</option>
+            <option value="ref1">1</option>
+            <option value="ref2">2</option>
+            <option value="ref3">3</option>
+          </select><br><br>
+        
+          <!-- Name -->
+          <label class="apply-label" for="first-name">First Name:</label>
+          <input class="apply-input" type="text" name="first-name" id="first-name" placeholder="First Name" required>
+        
+          <label class="apply-label" for="last-name">Last Name:</label>
+          <input class="apply-input" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+        
+          <!-- DOB -->
+          <label class="apply-label" for="DOB">Date of Birth:</label>
+          <input class="apply-input" type="text" name="DOB" id="DOB" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" required><br><br>
+        
+          <!-- Gender -->
+          <fieldset class="apply-fieldset">
+            <legend>Gender</legend>
+            <label for="male"><input type="radio" id="male" name="gender" value="male" checked> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+            <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+          </fieldset><br>
+        
+          <!-- Address -->
+          <label class="apply-label" for="address">Street Address:</label>
+          <input class="apply-input" type="text" name="address" id="address" placeholder="Street Address" required>
+        
+          <label class="apply-label" for="suburb">Suburb/Town:</label>
+          <input class="apply-input" type="text" name="suburb" id="suburb" placeholder="Suburb/Town" required>
+        
+          <label class="apply-label" for="postcode">Postcode:</label>
+          <input class="apply-input" type="text" name="postcode" id="postcode" placeholder="Postcode" pattern="\d{4}" required>
+        
+          <label class="apply-label" for="state">State:</label>
+          <select class="apply-input" name="state" id="state" required>
+            <option value="">State</option>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+          </select>
+        
+          <!-- Contact -->
+          <label class="apply-label" for="email">Email:</label>
+          <input class="apply-input" type="email" name="email" id="email" placeholder="Email" required>
+        
+          <label class="apply-label" for="phone_number">Phone Number:</label>
+          <input class="apply-input" type="text" name="phone_number" id="phone_number" placeholder="Phone Number" pattern="[0-9\s]{8,12}" required>
+        
+          <!-- Skills -->
+          <fieldset class="apply-fieldset">
+            <legend>Required Technical Skills</legend>
+            <label for="skill-html"><input type="checkbox" id="skill-html" name="skill" value="1" checked> HTML</label>
+            <label for="skill-css"><input type="checkbox" id="skill-css" name="skill" value="2"> CSS</label>
+            <label for="skill-js"><input type="checkbox" id="skill-js" name="skill" value="3"> JavaScript</label>
+            <label for="skill-debug"><input type="checkbox" id="skill-debug" name="skill" value="4"> Debugging</label>
+          </fieldset><br>
+        
+          <!-- Other Skills -->
+          <label class="apply-label" for="other-skills">Other Skills:</label><br>
+          <textarea class="apply-input" id="other-skills" name="other-skills" rows="5" placeholder="List additional skills..."></textarea><br><br>
+        
+          <!-- Buttons -->
+          <div class="ButtonHolder">
+            <input class="BigRedButton" type="submit" value="Apply">
+            <input class="BigRedButton" type="reset" value="Reset">
+          </div>
+        </form>        
+      </div>
+    </section>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ContactInfo">
+      <div><strong>Email:</strong><a class="Link" href="mailto:support@overachievingunderachievers.biz"> support@overachievingunderachievers.biz</a></div>
+      <div><strong>Phone:</strong> +1 (800) 867-5309</div>
+      <div><strong>Fax:</strong> lol no.</div>
+      <div><strong>Address:</strong> 404 Productivity Blvd, Suite 0, Hustleville, NY 10000</div>
+      <div><strong>Hours:</strong> Mon–Fri, 11:00 AM – 2:00 PM (we try)</div>
+      <div><strong>Jira:</strong><a class="Link" target="_blank" href="https://overachievingunderachievers.atlassian.net/"> overachievingunderachievers.atlassian.net</a></div>
+    </div>
+    <div class="TailLine">
+      <p>&copy; 2025 Overachieving Underachievers. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
